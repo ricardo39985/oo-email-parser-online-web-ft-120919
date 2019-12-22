@@ -9,6 +9,10 @@ class EmailAddressParser
   end
   def parse
     puts @emails
+<<<<<<< HEAD
     @emails.split(",").map { |e| e.strip }.map { |e| e.split(" ") }.flatten.uniq
+=======
+    @emails.split(",").map { |e| e.strip }.split(" ")
+>>>>>>> 4f470f9107eee1f58184ca091a809cda85d3b66c
   end
 end
